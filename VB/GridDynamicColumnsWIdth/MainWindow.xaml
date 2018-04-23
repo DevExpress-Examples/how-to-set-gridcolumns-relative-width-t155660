@@ -1,0 +1,32 @@
+﻿<Window xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"  x:Class="GridDynamicColumnsWIdth.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:GridDynamicColumnsWIdth"
+        xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+        Title="MainWindow" Height="438" Width="820">
+    <Grid>
+        <dxg:GridControl Name="grid1" AutoGenerateColumns="AddNew">
+            <dxg:GridControl.View>
+                <dxg:TableView>
+                    <dxmvvm:Interaction.Behaviors>
+                        <dxg:BandedViewBehavior>
+                            <dxg:BandedViewBehavior.ColumnDefinitions>
+                                <dxg:ColumnDefinition Width="2*"/>
+                                <dxg:ColumnDefinition Width="3*"/>
+                                <dxg:ColumnDefinition Width="5*"/>
+                                <dxg:ColumnDefinition Width="100"/>
+                            </dxg:BandedViewBehavior.ColumnDefinitions>
+                        </dxg:BandedViewBehavior>
+                    </dxmvvm:Interaction.Behaviors>
+                </dxg:TableView>
+            </dxg:GridControl.View>
+            <dxg:GridControl.Columns>
+                <dxg:GridColumn FieldName="Col1" dxg:BandedViewBehavior.Column="0" />
+                <dxg:GridColumn FieldName="Col2" dxg:BandedViewBehavior.Column="1" />
+                <dxg:GridColumn FieldName="Col3" dxg:BandedViewBehavior.Column="2" />
+                <dxg:GridColumn FieldName="Col4" dxg:BandedViewBehavior.Column="3" />
+            </dxg:GridControl.Columns>
+          
+        </dxg:GridControl>
+    </Grid>
+</Window>
