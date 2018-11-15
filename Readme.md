@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/GridDynamicColumnsWIdth/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/GridDynamicColumnsWIdth/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/GridDynamicColumnsWIdth/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/GridDynamicColumnsWIdth/MainWindow.xaml))
+<!-- default file list end -->
 # How to set GridColumn’s relative width
 
 
